@@ -1,0 +1,13 @@
+yfinance
+pandas
+math
+regex
+numpy
+scipy.stats
+datetime
+json
+requests
+psycopg2
+sched
+time
+sqlalchemy
