@@ -134,7 +134,7 @@ def ScrapeOptions(spy: yf.Ticker, vix: yf.Ticker, SExpDates: list(), VExpDates: 
 
     AllOptions = AllOptions.drop(columns=["contractSymbol", "contractSize", "currency", "impliedVolatility"])
 
-    engine = create_engine('postgresql+psycopg2://postgres:admin@localhost:5432/HistoricalData')
+    engine = create_engine('postgresql+psycopg2://dzdgvnslqh:DYPKDAcE9n@p4BH@histdsv-server.postgres.database.azure.com/postgres')
     AllOptions.to_sql("HistoricalData", engine, if_exists="append")
     SpyHist.append(Spr)
     SpyHist.pop(0)
